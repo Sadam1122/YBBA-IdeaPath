@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ability Test Hackathon</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Ability Test Hackathon</h1>
+            <p>Challenge yourself with our 3-hour ability test!</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="card-section">
+            <div class="card web" data-type="web">
+                <i class="fa fa-laptop"></i>
+                <h2>Website Project</h2>
+                <p>Create a responsive website.</p>
+                <button onclick="toggleSection('problemSection', 'web')">Select Problem</button>
+            </div>
+
+            <div class="card mobile" data-type="mobile">
+                <i class="fa fa-mobile"></i>
+                <h2>Mobile App Project</h2>
+                <p>Develop a mobile application.</p>
+                <button onclick="toggleSection('problemSection', 'mobile')">Select Problem</button>
+            </div>
+        </section>
+
+        <section class="problem-section hidden" id="problemSection">
+            <h2>Choose Your Problem</h2>
+            <div class="problems">
+                <div class="problem-card web">
+                    <h3>Problem 1: Create a responsive website for a travel blog.</h3>
+                    <p>Design and develop a website that showcases travel destinations with responsive layouts and interactive features.</p>
+                    <button onclick="startTest('Problem 1', 'web')">Select Problem</button>
+                </div>
+
+                <div class="problem-card mobile">
+                    <h3>Problem 1: Develop a mobile app for tracking daily tasks.</h3>
+                    <p>Create an app that allows users to manage their daily tasks efficiently with features like task lists, reminders, and notifications.</p>
+                    <button onclick="startTest('Problem 2', 'mobile')">Select Problem</button>
+                </div>
+
+                <div class="problem-card mobile">
+                    <h3>Problem 2: Develop a mobile app for tracking daily tasks.</h3>
+                    <p>Create an app that allows users to manage their daily tasks efficiently with features like task lists, reminders, and notifications.</p>
+                    <button onclick="startTest('Problem 2', 'mobile')">Select Problem</button>
+                </div>
+
+                <div class="problem-card web">
+                    <h3>Problem 2: Design an e-commerce website with payment integration.</h3>
+                    <p>Build an online store with product listings, shopping cart functionality, and secure payment integration for seamless transactions.</p>
+                    <button onclick="startTest('Problem 3', 'web')">Select Problem</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="test-section hidden" id="testSection">
+            <h2>Good luck with your challenge!</h2>
+            <h3>Time remaining: <span id="countdown">3:00:00</span></h3>
+<br>
+            <h2 style="text-align: center;">Submission</h2>
+            <form id="submissionForm" onsubmit="return handleSubmit()" enctype="multipart/form-data">
+                <label for="githubLink">GitHub Link:</label>
+                <input type="url" id="githubLink" name="githubLink" required>
+                
+                <label for="websiteLink">Website Link (optional):</label>
+                <input type="url" id="websiteLink" name="websiteLink">
+                
+                <label for="sourceCode">Upload Source Code:</label>
+                <div id="dropArea" class="drop-area">
+                    <input type="file" id="sourceCode" name="sourceCode" multiple accept=".zip,.rar,.tar,.tar.gz">
+                    <p>Drag & drop your files here, or <label for="sourceCode">browse</label></p>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ability Test Hackathon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        function handleSubmit() {
+            var githubLink = document.getElementById('githubLink').value.trim();
+            var websiteLink = document.getElementById('websiteLink').value.trim();
+            var sourceCode = document.getElementById('sourceCode').files.length;
+
+            // Check if GitHub Link is filled
+            if (githubLink === '') {
+                alert('Please fill out GitHub Link.');
+                return false; // Prevent form submission
+            }
+
+            // Check if Source Code is uploaded
+            if (sourceCode === 0) {
+                alert('Please upload Source Code.');
+                return false; // Prevent form submission
+            }
+
+            alert('Congratulations, you have successfully submitted your project!');
+            window.location.href = 'index.html';
+            return false; // Prevent form from submitting normally to show the alert and redirect
+        }
+
+        // Other functions (resetSections, toggleSection, startTest, formatTime, drag and drop)
+        // Add your existing JavaScript functions here
+
+
+
+
+
+
+    </script>
+</body>
+</html>

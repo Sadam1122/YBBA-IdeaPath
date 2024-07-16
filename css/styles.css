@@ -1,0 +1,296 @@
+/* Variable Definitions */
+:root {
+    --white-color: #ffffff;
+    --primary-color: #201e18;
+    --secondary-color: #f9cd0c;
+    --section-bg-color: #f0f8ff;
+    --custom-btn-bg-color: #FBD004;
+    --custom-btn-bg-hover-color: #363430;
+    --dark-color: #000000;
+    --p-color: #717275;
+    --border-color: #e6c000;
+    --link-hover-color: #363430;
+  
+    --body-font-family: 'Open Sans', sans-serif;
+    --title-font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Global Reset and Setup */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--body-font-family);
+    line-height: 1.6;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    color: var(--primary-color);
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .header-content h1{
+    color: #000000;
+  }
+  
+  .header-content p{
+    color: #000000;
+  }
+
+  /* Main Content */
+  .main-content {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  /* Card Section */
+  .card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .card-section button {
+    color: #000000;
+  }
+
+  .card-section button:hover {
+    color: #ffffff;
+  }
+  
+  .card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card i {
+    font-size: 48px;
+    color: var(--dark-color);
+  }
+  
+  .card h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: var(--dark-color);
+  }
+  
+  .card p {
+    color: var(--p-color);
+  }
+  
+  button {
+    background-color: var(--custom-btn-bg-color);
+    border: none;
+    color: var(--white-color);
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Problem Section */
+  .problem-section {
+    margin-top: 20px;
+  }
+  
+  .problem-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .problem-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+  
+  .problem-card p {
+    color: var(--p-color);
+  }
+
+  .problem-card button {
+    color: black;
+  }
+  
+  .problem-card button:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--dark-color);
+  }
+  
+  form input[type="url"],
+  form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .drop-area {
+    border: 2px dashed var(--custom-btn-bg-color);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .drop-area p {
+    color: var(--p-color);
+    margin-top: 10px;
+  }
+  
+  .drop-area input[type="file"] {
+    display: none;
+  }
+  
+  .drop-area.drag-over {
+    background-color: var(--section-bg-color);
+  }
+  
+  .submit-button {
+    background-color: var(--custom-btn-bg-color);
+    border: none;
+    color: var(--white-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li a {
+    color: var(--white-color);
+    font-size: 20px;
+  }
+  
+button {
+    color: black;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+}
+
+  
+.drop-area {
+  border: 2px dashed var(--custom-btn-bg-color);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  color: var(--p-color); /* Warna teks default */
+}
+
+.drop-area p {
+  margin-top: 10px;
+}
+
+.drop-area input[type="file"] {
+  display: none;
+}
+
+.drop-area.drag-over {
+  background-color: var(--custom-btn-bg-color); /* Warna latar belakang saat drag over */
+  border-color: var(--custom-btn-bg-color); /* Warna border saat drag over */
+  color: var(--custom-btn-bg-color); /* Warna teks saat drag over */
+}
+
+.drop-area.drag-over p {
+  color: white;
+}
+
+/* CSS for Countdown Animation */
+@keyframes countdown {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+#countdown {
+  font-size: 25px;
+  color:rgb(26, 171, 0);
+  animation: countdown 1s infinite;
+}

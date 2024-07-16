@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>IdeaPath</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">      
+
+    </head>
+    
+    <!-- YBBA OWNER -->
+
+
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="IdeaPath Logo" style="height: 40px; margin-bottom: 10px;">
+                        <span>IdeaPath</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Learning Path</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Superiority</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">testimonials</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">FAQs</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="ability.html">Ability Test</a></li>
+
+                                    <li><a class="dropdown-item" href="Forum-chat.html">Discussion Forum</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <i class="bi bi-person navbar-icon" id="login-icon"></i>
+                        </div>
+                        
+                        <div class="popup" id="login-popup">
+                            <div class="popup-header">
+                                <span class="popup-close" id="popup-close">&times;</span>
+                            </div>
+                            <div class="popup-body">
+                                <h5>Login</h5>
+                                <button class="btn btn-outline-primary" onclick="googleLogin()">
+                                    <i class="fab fa-google"></i> Login with Google
+                                </button>
+                            </div>
+                        </div>                        
+                        
+                        
+                    </div>
+                </div>
+            </nav>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">Discover. Learn. Enjoy</h1>
+
+                            <h6 class="text-center">Platform to improve your skills and innovation in the world of technology</h6>
+
+                            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bi-search" id="basic-addon1">
+                                        
+                                    </span>
+
+                                    <input name="keyword" type="search" class="form-control" id="keyword" placeholder="Course, Ability Test, Quiz ..." aria-label="Search">
+
+                                    <button type="submit" class="form-control">Search</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg p-3 position-relative">
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <h5 class="mb-2">Highlight</h5>
+                                    </div>
+                                    <span class="badge bg-music rounded-pill ms-auto">1</span>
+                                </div>
+                                <div class="embed-responsive embed-responsive-16by9 video-container">
+                                    <div class="video-overlay"></div>
+                                    <iframe class="embed-responsive-item video-frame" src="https://www.youtube.com/embed/qycqF1CWcXg?enablejsapi=1" allowfullscreen style="width: 100%; height: 300px; border: 0;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <h5 class="text-white mb-2">Welcome to IdeaPath</h5>
+
+                                            <p class="text-white">Explore our diverse range of topics, connect with like-minded individuals, and embark on your path to greatness. Together, we'll transform your ideas into reality.
+
+                                            </p>
+
+                                            <a href="#section_3" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-music rounded-pill ms-auto">2</span>
+                                    </div>
+
+
+                                    <div class="social-share d-flex">
+                                        <p class="text-white me-4">Share:</p>
+                                    
+                                        <ul class="social-icon">
+                                            <li class="social-icon-item">
+                                                <a href="https://www.instagram.com" class="social-icon-link bi-instagram"></a>
+                                            </li>
+                                    
+                                            <li class="social-icon-item">
+                                                <a href="https://www.facebook.com" class="social-icon-link bi-facebook"></a>
+                                            </li>
+                                    
+                                            <li class="social-icon-item">
+                                                <a href="https://www.whatsapp.com" class="social-icon-link bi-whatsapp"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+<br><br>
+            <div class="col-12 text-center">
+                <h2 class="mb-4">Article</h1>
+            </div>
+
+            <div class="wrapper">
+                <div class="news">
+                    <img src="images/businesswoman-using-tablet-analysis.jpg" alt="News Image">
+                    <div class="news-content">
+                        <span class="tag">News</span>
+                        <h2>Pop Star’s Comeback Album Dominates</h2>
+                        <p>Monday, 3 February 2025 | 13:20 WIB</p>
+                    </div>
+                </div>
+                <div class="terpopuler">
+                    <h3>Most Popular</h3>
+                    <ol>
+                        <li>Scientists Discover...</li>
+                        <li>Government Announces...</li>
+                        <li>Robotics Firm Launches AI...</li>
+                        <li>Record-Breaking Snowfall...</li>
+                        <li>Researchers Develop...</li>
+                        <li>Startup Raises $50...</li>
+                        <li>Global Leaders Meet...</li>
+
+
+
+
+                    </ol>
+                    
+                </div>
+            </div>
+                <div class="berita-terkini">
+                    <h3>Latest News</h3>
+                    <ul>
+                        <li>
+                            <img src="images/businesswoman-using-tablet-analysis.jpg" alt="Berita 1">
+                            <div class="content">
+                                <span class="tag">News</span>
+                                <p>New Study Reveals Surprising Effects of Climate Change on Wildlife Migration</p>
+                                <p>Thursday, 22 December 2024 | 16:45 WIB</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/businesswoman-using-tablet-analysis.jpg" alt="Berita 2">
+                            <div class="content">
+                                <span class="tag">News</span>
+                                <p>Global Health Experts Warn of Potential New Flu Outbreak</p>
+                                <p>Wednesday, 17 August 2024 | 09:30 WIB</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/businesswoman-using-tablet-analysis.jpg" alt="Berita 3">
+                            <div class="content">
+                                <span class="tag">News</span>
+                                <p>Economic Forecast Shows Signs of Recovery Amidst Global Uncertainty</p>
+                                <p>Tuesday, 5 November 2024 | 11:00 WIB</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/businesswoman-using-tablet-analysis.jpg" alt="Berita 4">
+                            <div class="content">
+                                <span class="tag">News</span>
+                                <p>Breakthrough in Cancer Treatment Offers Hope to Thousands</p>
+                                <p>Saturday, 29 September 2024 | 14:15 WIB</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/businesswoman-using-tablet-analysis.jpg" alt="Berita 5">
+                            <div class="content">
+                                <span class="tag">News</span>
+                                <p>Tech Giants Face Scrutiny Over Data Privacy Practices</p>
+                                <p>Thursday, 22 December 2024 | 16:45 WIB</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    <!-- Footer Start -->
+    <footer id="footer-copyright" class="cp">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <p style="color: white;">
+                    &copy; Copyright 2024 IdeaPath. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up" id="scroll-top"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                speed: 600,
+                autoplay: {
+                  delay: 3000,
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                  clickable: true,
+                },
+                breakpoints: {
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                  },
+                  1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                  },
+                },
+              });
+            });
+          </script>
+          
+          
+    </body>
+</html>

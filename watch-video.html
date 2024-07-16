@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style(videos).css">
+
+</head>
+<body>
+
+   
+<header class="header">
+   
+   <section class="flex">
+
+      <a class="navbar-brand" href="index.html">
+         <img src="images/logo.png" alt="IdeaPath Logo" style="height: 40px; margin-bottom: -5px;">
+         <span style="color: black;">IdeaPath</span>
+     </a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+      <!--  
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">studen</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+      -->
+   </section>
+
+</header>   
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">Memulai Pemrograman dengan Android Studio</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-10-2022</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span id="likeCount">30 Likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="assets\img\testimonials\testimonials-1.jpg" alt="">
+         <div>
+            <h3>Michael</h3>
+            <span>developer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="videos.html" class="inline-btn">view playlist</a>  
+         <a class="like-button" onclick="togglePink()">
+            <p class="far fa-heart"></p><span>Like</span>
+        </a>
+      </form>
+      <p class="description"> In this video, you'll be taking the first steps towards becoming an Android developer!  We'll dive into the world of mobile app development using Android Studio, the official Integrated Development Environment (IDE) for building Android apps.
+Here's what you can expect to learn:
+<ol class="list">
+   <li><b>What is Android Development?</b> We'll explore the basics of creating apps for smartphones and tablets powered by the Android operating system.</li>
+   <li><b>Introducing Android Studio: </b>You'll get a guided tour of the Android Studio interface, including its essential tools and functionalities.
+</ol> </p>
+<p class="description">By the end of this video, you'll have a solid foundation for your journey into Android development and be prepared to delve deeper into building more complex apps!</p>
+     
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">2 comments</h1>
+
+   <form action="" class="add-comment">
+      <h3>Add Comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">user comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="assets\img\testimonials\testimonials-5.jpg" alt="">
+            <div>
+               <h3>Sadam Al Rasyid</h3>
+               <span>15-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">This is really good course. Thankss</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="assets\img\testimonials\testimonials-4.jpg" alt="">
+            <div>
+               <h3>Fakhriadi</h3>
+               <span>01-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+            how to download the android studio
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<footer>
+   <p>© Copyright 2024 IdeaPath. All rights reserved.    </p>
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>
